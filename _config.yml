@@ -1,7 +1,7 @@
 title: "אור התורה"
 description: "אתר תורני – מאמרים, שיעורים וספרים"
-url: ""
-baseurl: ""
+url: "https://github.com/BSdeployment"
+baseurl: "/torani"
 lang: he
 direction: rtl
 
