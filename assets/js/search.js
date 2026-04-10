@@ -16,7 +16,7 @@
   // Fetch all posts JSON once
   function fetchAllPosts() {
     if (allPosts) return Promise.resolve(allPosts);
-    return fetch('/articles/all.json')
+    return fetch('/torani/articles/all.json')
       .then(r => r.json())
       .then(data => { allPosts = data; return data; });
   }
