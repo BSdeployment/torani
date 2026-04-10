@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>בית – אור התורה</title>
+  <meta name="description" content="אור התורה – אתר תורני עם מאמרים, שיעורים וספרים להורדה">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link rel="icon" href="/torani/assets/images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/torani/assets/css/style.css">
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>בית | אור התורה</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="בית" />
+<meta property="og:locale" content="he" />
+<meta name="description" content="אור התורה – אתר תורני עם מאמרים, שיעורים וספרים להורדה" />
+<meta property="og:description" content="אור התורה – אתר תורני עם מאמרים, שיעורים וספרים להורדה" />
+<link rel="canonical" href="http://localhost:4000/torani/" />
+<meta property="og:url" content="http://localhost:4000/torani/" />
+<meta property="og:site_name" content="אור התורה" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="בית" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"אור התורה – אתר תורני עם מאמרים, שיעורים וספרים להורדה","headline":"בית","name":"אור התורה","url":"http://localhost:4000/torani/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <a href="/torani/" class="site-logo">אור התורה</a>
+    <button class="menu-toggle" aria-label="תפריט" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="/torani/" class="nav-link active">בית</a>
+      <a href="/torani/articles" class="nav-link ">מאמרים</a>
+      <a href="/torani/books" class="nav-link ">ספרים וקבצים</a>
+      <a href="/torani/media" class="nav-link ">מדיה</a>
+      <a href="/torani/contact" class="nav-link ">יצירת קשר</a>
+      <div style="display: flex; align-items: center; gap: 0;">
+  <button class="theme-toggle" id="theme-toggle" aria-label="מצב כהה/בהיר" title="מצב כהה/בהיר">🌙</button>
+  <button style="margin: 0 10px;" class="theme-toggle" onclick="window.print()" aria-label="הדפסת מאמר" title="הדפסה">🖨️</button>
+</div>
+
+    </nav>
+  </div>
+</header>
+<script>
+  // Mobile menu
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    const nav = document.getElementById('site-nav');
+    const expanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', !expanded);
+    nav.classList.toggle('open');
+    this.classList.toggle('open');
+  });
+
+  // Dark mode toggle
+  (function() {
+    const toggle = document.getElementById('theme-toggle');
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      toggle.textContent = '☀️';
+    }
+    toggle.addEventListener('click', function() {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+        this.textContent = '🌙';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        this.textContent = '☀️';
+      }
+    });
+  })();
+</script>
+
+  <main class="site-main">
+    <style>
+
+  .img-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+  background: radial-gradient(circle at top, #ffffff, #e9f0f7);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-box {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(8px);
+  padding: 50px 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  max-width: 700px;
+  width: 100%;
+  animation: scaleIn 0.8s ease;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.hero-title::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 8px;
+  background: #dbeafe;
+  bottom: -8px;
+  left: 20%;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* אנימציות */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+</style>
+
+<div class="container">
+ <section class="hero">
+  <div class="hero-box">
+    <h1 style="font-size:70px;" class="hero-title">אור התורה</h1>
+    <p style="color:black;" class="hero-subtitle">
+      מקום לעיון, לימוד והעמקה בדברי תורה.<br />
+      מאמרים, שיעורים וספרים — הכל במקום אחד.
+    </p>
+    
+    <img class="img-circle" src="assets/images/image.png" alt="Image" />
+
+     <p style="font-size: 25px;color: black;"><b>לע"נ מור אבי שלמה בן חסיבה זצ"ל</b></p>
+  </div>
+</section>
+
+  <section class="section fade-in">
+    <h2 class="section-title">מאמרים אחרונים</h2>
+    <div class="card-list">
+      
+      <div class="card">
+        <h3 class="card__title"><a href="/torani/2026/04/05/%D7%92%D7%90%D7%95%D7%9C%D7%AA-%D7%A4%D7%A1%D7%97.html">מגאולת פסח לגאולת עולמים</a></h3>
+        <div class="card__meta">05.04.2026</div>
+        <p class="card__excerpt">מאמר מקיף על ההקשר בין גאולת מצרים לגאולת עולמים</p>
+        <a href="/torani/2026/04/05/%D7%92%D7%90%D7%95%D7%9C%D7%AA-%D7%A4%D7%A1%D7%97.html" class="card__link">קרא עוד ←</a>
+      </div>
+      
+      <div class="card">
+        <h3 class="card__title"><a href="/torani/2025/03/29/%D7%9C%D7%90-%D7%AA%D7%99%D7%A8%D7%90%D7%95%D7%9D.html">לא תיראום - הפחד במלחמה</a></h3>
+        <div class="card__meta">29.03.2025</div>
+        <p class="card__excerpt">בירור מצוות לא תערץ מפניהם, והמסתעף לתקופת המלחמה</p>
+        <a href="/torani/2025/03/29/%D7%9C%D7%90-%D7%AA%D7%99%D7%A8%D7%90%D7%95%D7%9D.html" class="card__link">קרא עוד ←</a>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="section fade-in">
+    <h2 class="section-title">ספרים וקבצים</h2>
+    <div class="card-list">
+      
+      <div class="card book-card">
+        <span class="book-card__category">עיונים</span>
+        <h3 class="card__title">ארץ ישראל - מלחמה , תקומת ישראל ועוד</h3>
+        <p class="book-card__desc">סוגיות הלכתיות עיוניות ורעיונית סביב נושא ארץ ישראל, הלכות מלחמה, עם ישראל ועוד</p>
+        <a href="https://drive.google.com/drive/folders/1yAdINlKWxX5Q8nQv1t_I2MUGWJKvK66l?usp=drive_link" target="_blank" rel="noopener" class="book-card__btn">הורדה / צפייה</a>
+      </div>
+      
+      <div class="card book-card">
+        <span class="book-card__category">הלכה</span>
+        <h3 class="card__title">אורח חיים</h3>
+        <p class="book-card__desc">עיונים הלכות וסוגיות בענייני אורח חיים</p>
+        <a href="https://drive.google.com/drive/folders/1qc-REBJEnouIs21D9itsEJ8dd0LgsNEl?usp=drive_link" target="_blank" rel="noopener" class="book-card__btn">הורדה / צפייה</a>
+      </div>
+      
+      <div class="card book-card">
+        <span class="book-card__category">הלכה</span>
+        <h3 class="card__title">שולחן ערוך יורה דעה</h3>
+        <p class="book-card__desc">הלכה ועיון בנושאים מגוונים בשולחן ערוך יורה דעה</p>
+        <a href="https://drive.google.com/drive/folders/1UXCXL393MpwB6wWUuwmXVbVvXA5zQsrq?usp=drive_link" target="_blank" rel="noopener" class="book-card__btn">הורדה / צפייה</a>
+      </div>
+      
+    </div>
+  </section>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+});
+</script>
+
+
+  </main>
+  <footer class="site-footer">
+  <div class="container">
+    <p>© 2026 אור התורה. כל הזכויות שמורות.</p>
+  </div>
+</footer>
+
+  
+</body>
+</html>

@@ -1,0 +1,37 @@
+title: "אור התורה"
+description: "אתר תורני – מאמרים, שיעורים וספרים"
+url: ""
+baseurl: ""
+lang: he
+direction: rtl
+
+paginate: 15
+paginate_path: "/articles/page:num/"
+
+collections:
+  books:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

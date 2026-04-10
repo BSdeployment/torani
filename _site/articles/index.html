@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מאמרים – אור התורה</title>
+  <meta name="description" content="כל המאמרים באתר אור התורה">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link rel="icon" href="/torani/assets/images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/torani/assets/css/style.css">
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>מאמרים | אור התורה</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="מאמרים" />
+<meta property="og:locale" content="he" />
+<meta name="description" content="כל המאמרים באתר אור התורה" />
+<meta property="og:description" content="כל המאמרים באתר אור התורה" />
+<link rel="canonical" href="http://localhost:4000/torani/articles/" />
+<meta property="og:url" content="http://localhost:4000/torani/articles/" />
+<meta property="og:site_name" content="אור התורה" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="מאמרים" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"כל המאמרים באתר אור התורה","headline":"מאמרים","url":"http://localhost:4000/torani/articles/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <a href="/torani/" class="site-logo">אור התורה</a>
+    <button class="menu-toggle" aria-label="תפריט" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="/torani/" class="nav-link ">בית</a>
+      <a href="/torani/articles" class="nav-link active">מאמרים</a>
+      <a href="/torani/books" class="nav-link ">ספרים וקבצים</a>
+      <a href="/torani/media" class="nav-link ">מדיה</a>
+      <a href="/torani/contact" class="nav-link ">יצירת קשר</a>
+      <div style="display: flex; align-items: center; gap: 0;">
+  <button class="theme-toggle" id="theme-toggle" aria-label="מצב כהה/בהיר" title="מצב כהה/בהיר">🌙</button>
+  <button style="margin: 0 10px;" class="theme-toggle" onclick="window.print()" aria-label="הדפסת מאמר" title="הדפסה">🖨️</button>
+</div>
+
+    </nav>
+  </div>
+</header>
+<script>
+  // Mobile menu
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    const nav = document.getElementById('site-nav');
+    const expanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', !expanded);
+    nav.classList.toggle('open');
+    this.classList.toggle('open');
+  });
+
+  // Dark mode toggle
+  (function() {
+    const toggle = document.getElementById('theme-toggle');
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      toggle.textContent = '☀️';
+    }
+    toggle.addEventListener('click', function() {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+        this.textContent = '🌙';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        this.textContent = '☀️';
+      }
+    });
+  })();
+</script>
+
+  <main class="site-main">
+    <div class="container">
+  <h1 class="page-title">מאמרים</h1>
+
+  <div class="search-bar">
+    <input type="text" id="search-input" class="search-bar__input" placeholder="חפש מאמרים...">
+    <div class="search-bar__controls">
+      <button class="search-mode-btn active" data-mode="title">לפי כותרת</button>
+      <button class="search-mode-btn" data-mode="tags">לפי תגיות</button>
+    </div>
+    <div class="topic-tags" id="topic-tags">
+     <button class="topic-tag" data-topic="מועדים">מועדים</button>
+  <button class="topic-tag" data-topic="הלכה">הלכה</button>
+  <button class="topic-tag" data-topic="שבת">שבת</button>
+  <button class="topic-tag" data-topic="גמרא">גמרא</button>
+  <button class="topic-tag" data-topic="עיון">עיון</button>
+  <button class="topic-tag" data-topic="ישראל">ישראל</button>
+  <button class="topic-tag" data-topic="מלחמה">מלחמה</button>
+  <button class="topic-tag" data-topic="ברכות">ברכות</button>
+  <button class="topic-tag" data-topic="איסור והיתר">איסור והיתר</button>
+  <button class="topic-tag" data-topic="אורח חיים">אורח חיים</button>
+  <button class="topic-tag" data-topic="יורה דעה">יורה דעה</button>
+  <button class="topic-tag" data-topic="אבן העזר">אבן העזר</button>
+  <button class="topic-tag" data-topic="חושן משפט">חושן משפט</button>
+  <button class="topic-tag" data-topic="מחשבה">מחשבה</button>
+  <button class="topic-tag" data-topic="כלכלה">כלכלה</button>
+  <button class="topic-tag" data-topic="טכנולוגיה">טכנולוגיה</button>
+  <button class="topic-tag" data-topic="פרשת שבוע">פרשת שבוע</button>
+  <button class="topic-tag" data-topic="אמונה ובטחון">אמונה ובטחון</button>
+      <button class="topic-clear" id="clear-topics" style="display:none;">נקה בחירה ✕</button>
+    </div>
+
+  
+</div>
+ 
+
+  <div class="card-list" id="posts-list">
+    
+    <div class="card post-card" data-title="מגאולת פסח לגאולת עולמים" data-tags="מועדים,דרשות,פסח">
+      <h3 class="card__title"><a href="/torani/2026/04/05/%D7%92%D7%90%D7%95%D7%9C%D7%AA-%D7%A4%D7%A1%D7%97.html">מגאולת פסח לגאולת עולמים</a></h3>
+      <div class="card__meta">
+        05.04.2026
+        
+        · <span class="tag">מועדים</span><span class="tag">דרשות</span><span class="tag">פסח</span>
+        
+      </div>
+      <p class="card__excerpt">מאמר מקיף על ההקשר בין גאולת מצרים לגאולת עולמים</p>
+      <a href="/torani/2026/04/05/%D7%92%D7%90%D7%95%D7%9C%D7%AA-%D7%A4%D7%A1%D7%97.html" class="card__link">קרא עוד ←</a>
+    </div>
+    
+    <div class="card post-card" data-title="לא תיראום - הפחד במלחמה" data-tags="מלחמה,הלכה,עיון">
+      <h3 class="card__title"><a href="/torani/2025/03/29/%D7%9C%D7%90-%D7%AA%D7%99%D7%A8%D7%90%D7%95%D7%9D.html">לא תיראום - הפחד במלחמה</a></h3>
+      <div class="card__meta">
+        29.03.2025
+        
+        · <span class="tag">מלחמה</span><span class="tag">הלכה</span><span class="tag">עיון</span>
+        
+      </div>
+      <p class="card__excerpt">בירור מצוות לא תערץ מפניהם, והמסתעף לתקופת המלחמה</p>
+      <a href="/torani/2025/03/29/%D7%9C%D7%90-%D7%AA%D7%99%D7%A8%D7%90%D7%95%D7%9D.html" class="card__link">קרא עוד ←</a>
+    </div>
+    
+  </div>
+
+  <div id="no-results" class="search-no-results">לא נמצאו תוצאות.</div>
+
+  
+</div>
+<!-- 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  // ===== JSON מקומי =====
+  const topicsData = [
+    "מועדים",
+    "הלכה",
+    "שבת",
+    "עיון גמרא",
+    "ישראל מלחמה",
+    "ברכות",
+    "איסור והיתר",
+    "אורח חיים",
+    "יורה דעה",
+    "אבן העזר",
+    "חושן משפט",
+    "מחשבה",
+    "כלכלה",
+    "טכנולוגיה",
+    "יום טוב",
+    "אמונה ובטחון"
+  ];
+
+  const container = document.getElementById('topic-tags');
+  const clearBtn = document.getElementById('clear-topics');
+
+  // ===== יצירת כפתורים =====
+  topicsData.forEach(topic => {
+    const btn = document.createElement('button');
+    btn.className = 'topic-tag';
+    btn.dataset.topic = topic;
+    btn.textContent = topic;
+
+    // חשוב: לפני כפתור הניקוי כדי לשמור מבנה
+    container.insertBefore(btn, clearBtn);
+  });
+
+});
+</script> -->
+
+
+  </main>
+  <footer class="site-footer">
+  <div class="container">
+    <p>© 2026 אור התורה. כל הזכויות שמורות.</p>
+  </div>
+</footer>
+
+  
+  <script src="/torani/assets/js/search.js"></script>
+  
+</body>
+</html>

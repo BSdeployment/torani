@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="post-full">
+  <header class="post-full__header">
+    <h1>{{ page.title }}</h1>
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d.%m.%Y" }}</time>
+    {% if page.tags.size > 0 %}
+    <div class="post-full__tags">
+      {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </header>
+  <div class="post-full__body prose post-content-font">
+    {{ content }}
+  </div>
+</article>
