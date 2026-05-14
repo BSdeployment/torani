@@ -1,7 +1,9 @@
 title: "אור התורה"
 description: "אתר תורני – מאמרים, שיעורים וספרים"
-url: "https://github.com/BSdeployment"
+
+url: "https://bsdeployment.github.io"
 baseurl: "/torani"
+
 lang: he
 direction: rtl
 
@@ -17,6 +19,7 @@ defaults:
       path: ""
     values:
       layout: default
+
   - scope:
       path: "_posts"
       type: posts
@@ -24,12 +27,17 @@ defaults:
       layout: post
 
 markdown: kramdown
+
 kramdown:
   input: GFM
 
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
+
 
 exclude:
   - README.md
