@@ -21,7 +21,11 @@
     {{ content }}
   </main>
   {% include footer.html %}
+  <script>
+  window.BASEURL = "{{ site.baseurl }}";
+ </script>
   {% if page.search %}
+ 
   <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
   {% endif %}
 </body>
