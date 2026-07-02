@@ -4,8 +4,15 @@ layout: default
 <article class="post-full">
   <header class="post-full__header">
     <h1>{{ page.title }}</h1>
-    <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d.%m.%Y" }}</time>
-    <div class="hebrew-date"></div>
+
+
+    <!-- <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d.%m.%Y" }}</time> -->
+  
+    <div class="hebrew-date" data-date="{{ page.date | date: '%Y-%m-%d' }}"></div>
+
+
+
+
     {% if page.tags.size > 0 %}
     <div class="post-full__tags">
       {% for tag in page.tags %}
@@ -24,5 +31,16 @@ layout: default
     {{ content }}
   </div>
 </article>
+
+<script src="{{ '/assets/js/hebrew_date_core.js' | relative_url }}"></script>
+<script>
+  document.querySelectorAll('.hebrew-date').forEach(function (el) {
+    try {
+      el.textContent = HebrewDate.toHebrewDateString(el.dataset.date);
+    } catch (e) {
+      console.error(e);
+    }
+  });
+</script>
 
 

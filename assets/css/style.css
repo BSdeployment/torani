@@ -598,3 +598,9 @@ img { max-width: 100%; height: auto; }
   .page-title, .post-full__header h1 { font-size: 1.6rem; }
   .media-grid { grid-template-columns: 1fr; }
 }
+
+.hebrew-date{
+  font-weight: bold;
+  padding-bottom: 10px;
+
+}
