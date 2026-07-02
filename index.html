@@ -107,7 +107,13 @@ description: "אור התורה – אתר תורני עם מאמרים, שיע�
       {% for post in site.posts limit:3 %}
       <div class="card">
         <h3 class="card__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <div class="card__meta">{{ post.date | date: "%d.%m.%Y" }}</div>
+
+        <!-- <div class="card__meta">{{ post.date | date: "%d.%m.%Y" }}</div> -->
+
+         <div class="hebrew-date" data-date="{{ post.date | date: '%Y-%m-%d' }}"></div>
+
+
+
         <p class="card__excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
         <a href="{{ post.url | relative_url }}" class="card__link">קרא עוד ←</a>
       </div>
@@ -138,3 +144,16 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 });
 </script>
+
+
+<script src="{{ '/assets/js/hebrew_date_core.js' | relative_url }}"></script>
+<script>
+  document.querySelectorAll('.hebrew-date').forEach(function (el) {
+    try {
+      el.textContent = HebrewDate.toHebrewDateString(el.dataset.date);
+    } catch (e) {
+      console.error(e);
+    }
+  });
+</script>
+
