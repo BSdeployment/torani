@@ -219,8 +219,8 @@ img { max-width: 100%; height: auto; }
   font-weight: 700;
   margin-bottom: 0.35rem;
 }
-.card__title a { color: var(--color-text); }
-.card__title a:hover { color: var(--color-primary); }
+.card__title a { color: var(--color-primary); }
+.card__title a:hover { color: var(--color-primary-light); }
 
 .card__meta {
   font-size: 0.85rem;
