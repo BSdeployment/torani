@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "יצירת קשר"
-description: "צור קשר עם אור התורה"
+description: "צור קשר עם אבן שלמה"
 ---
 
 <div class="container">
