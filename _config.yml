@@ -26,10 +26,12 @@ defaults:
     values:
       layout: post
 
-markdown: kramdown
+# markdown: kramdown
 
-kramdown:
-  input: GFM
+# kramdown:
+#   input: GFM
+
+markdown: GFM
 
 plugins:
   - jekyll-seo-tag
