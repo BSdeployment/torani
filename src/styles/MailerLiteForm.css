@@ -1,0 +1,321 @@
+
+.newsletter-section {
+  width: 100%;
+  max-width: 580px;
+  margin: 22px auto 0;
+  direction: rtl;
+}
+
+/* כרטיס האקורדיון */
+
+.newsletter-toggle {
+  width: 100%;
+  min-height: 88px;
+  padding: 17px 21px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: right;
+  background: #fff;
+  border: 1px solid #e8edf5;
+  border-radius: 13px;
+  box-shadow: 0 5px 20px rgba(36, 63, 105, 0.035);
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.newsletter-toggle:hover,
+.newsletter-toggle.is-open {
+  border-color: #cbd5f0;
+  box-shadow: 0 6px 22px rgba(36, 63, 105, 0.07);
+}
+
+.newsletter-icon {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4056ad;
+  background: #f0f3ff;
+  border-radius: 12px;
+}
+
+.newsletter-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.newsletter-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.newsletter-text strong {
+  color: #294c78;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.newsletter-text small {
+  color: #8994a5;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.newsletter-arrow {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #62749a;
+  background: #f5f7fb;
+  border-radius: 50%;
+  transition: transform 0.3s, background 0.2s;
+}
+
+.newsletter-arrow svg {
+  width: 19px;
+  height: 19px;
+}
+
+.newsletter-toggle.is-open .newsletter-arrow {
+  transform: rotate(180deg);
+  background: #edf0fc;
+}
+
+/* אזור פתיחת האקורדיון */
+
+.newsletter-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    grid-template-rows 0.35s ease,
+    opacity 0.25s ease,
+    margin 0.35s ease,
+    visibility 0.35s;
+}
+
+.newsletter-content.is-open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  visibility: visible;
+  margin-top: 12px;
+}
+
+.newsletter-inner {
+  min-height: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e8edf5;
+  border-radius: 13px;
+  padding: 25px 28px;
+  box-shadow: 0 5px 20px rgba(36, 63, 105, 0.035);
+}
+
+/* עיצוב הטופס של MailerLite */
+
+.newsletter-section .ml-form-embedContent {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.newsletter-section .ml-form-embedContent h2 {
+  margin: 0 0 9px;
+  color: #294c78;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.newsletter-section .ml-form-embedContent p {
+  margin: 0;
+  color: #8994a5;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.newsletter-section .ml-form-formContent {
+  width: 100%;
+}
+
+.newsletter-section .ml-form-fieldRow,
+.newsletter-section .ml-field-group {
+  width: 100%;
+}
+
+.newsletter-section .ml-field-group input[type="email"] {
+  width: 100% !important;
+  height: 49px !important;
+  padding: 0 15px !important;
+  box-sizing: border-box !important;
+  border: 1px solid #dce3ed !important;
+  border-radius: 9px !important;
+  background: #fbfcfe !important;
+  color: #28384e !important;
+  font-family: inherit !important;
+  font-size: 14px !important;
+  text-align: right !important;
+  outline: none !important;
+  transition: border-color 0.2s, box-shadow 0.2s !important;
+}
+
+.newsletter-section .ml-field-group input[type="email"]:focus {
+  border-color: #5067b9 !important;
+  box-shadow: 0 0 0 3px rgba(80, 103, 185, 0.10) !important;
+}
+
+.newsletter-section .ml-form-embedSubmit {
+  margin-top: 15px !important;
+}
+
+.newsletter-section .ml-form-embedSubmit button {
+  width: 100% !important;
+  min-height: 49px !important;
+  border: none !important;
+  border-radius: 9px !important;
+  background: #4053ad !important;
+  color: #fff !important;
+  font-family: inherit !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  transition: background 0.2s !important;
+}
+
+.newsletter-section .ml-form-embedSubmit button:hover {
+  background: #30438f !important;
+}
+
+.newsletter-note {
+  margin: 13px 0 0;
+  color: #9aa4b2;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* הודעת הצלחה */
+
+.newsletter-section .ml-form-successBody {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.newsletter-section .ml-success-icon {
+  width: 49px;
+  height: 49px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edf8f1;
+  color: #247448;
+  border-radius: 50%;
+  font-size: 23px;
+}
+
+.newsletter-section .ml-form-successContent h2 {
+  color: #294c78;
+  font-size: 21px;
+}
+
+.newsletter-section .ml-form-successContent p {
+  color: #8994a5;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.newsletter-section .ml-form-successContent hr {
+  border: none;
+  border-top: 1px solid #edf0f5;
+  margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .newsletter-section {
+    margin-top: 16px;
+  }
+
+  .newsletter-toggle {
+    min-height: 78px;
+    padding: 13px;
+    gap: 11px;
+  }
+
+  .newsletter-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .newsletter-text strong {
+    font-size: 14px;
+  }
+
+  .newsletter-text small {
+    font-size: 12px;
+  }
+
+  .newsletter-inner {
+    padding: 22px 17px;
+  }
+
+  .newsletter-section .ml-form-embedContent h2 {
+    font-size: 19px;
+  }
+}
+
+
+/* הודעת הצלחה מותאמת אישית */
+
+.newsletter-section .ml-form-successContent {
+  text-align: center;
+  padding: 12px 5px;
+}
+
+.newsletter-section .ml-success-icon {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #edf8f1;
+  color: #268653;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.newsletter-section .ml-form-successContent h2 {
+  margin: 0 0 14px;
+  color: #294c78;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.newsletter-section .ml-form-successContent p {
+  color: #78869a;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.newsletter-section .ml-form-successContent strong {
+  color: #345477;
+}
+
+.newsletter-success-note {
+  margin-top: 18px;
+  padding: 12px;
+  border-radius: 9px;
+  background: #f4f6fb;
+  color: #71809a;
+  font-size: 13px;
+  line-height: 1.8;
+}
